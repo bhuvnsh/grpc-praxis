@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS numbers (
+    id INT NOT NULL
+    value BIGINT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS factors (
+    id INT NOT NULL
+    value BIGINT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS users (
+      id BIGINT AUTO_INCREMENT PRIMARY KEY,
+      username VARCHAR(255) NOT NULL,
+      password VARCHAR(255) NOT NULL
+);

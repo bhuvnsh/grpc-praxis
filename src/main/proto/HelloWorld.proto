@@ -1,0 +1,40 @@
+syntax = "proto3";
+package com.grpc.grpcpraxis.grpcserver;
+
+option java_package = "com.grpc.grpcpraxis.grpcserver";
+
+//This is a protocol buffer file that defines wrapper types
+import "google/protobuf/wrappers.proto";
+//To make custom validation rules
+import "google/protobuf/descriptor.proto";
+
+service HelloWorldService {
+  rpc SayHello (HelloRequest) returns (HelloResponse) {}
+}
+
+/*  The 'FieldOptions' message alone does not provide a mechanism for defining or enforcing custom validation rules.
+    It is not designed to support custom validation rules or options
+*/
+extend google.protobuf.FieldOptions {
+  string validation_rule = 10001;
+}
+
+
+message HelloRequest {
+  string name = 1 [(validation_rule) = "name_length"];
+}
+
+message NumberFactorResult {
+  int64 value = 1;
+  int64 factorValue = 2;
+  double result = 3;
+  //using protobuf wrappers to wrap double
+  google.protobuf.DoubleValue factoredValue = 4;
+  string name = 5;
+
+}
+
+message HelloResponse {
+  repeated NumberFactorResult numberFactor = 1;
+  int32 size = 2;
+}
