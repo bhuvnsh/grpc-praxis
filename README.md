@@ -54,7 +54,7 @@ Contributions to gRPC Praxis are welcome! If you find any issues or have suggest
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [LICENSE].
 
 
 ## Contact
