@@ -52,8 +52,10 @@ The server automatically generates 1000 records of objects with fake names in th
 
 Contributions to gRPC Praxis are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
 ## Contact
 
