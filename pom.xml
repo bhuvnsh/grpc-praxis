@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.grpc</groupId>
 	<artifactId>grpc-praxis</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>grpc-praxis</name>
 	<description>Demo project for Spring Boot with gRPC</description>
 	<properties>
